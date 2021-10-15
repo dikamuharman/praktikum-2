@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin-bottom: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Form pendaftaran</h1>
+  <!-- Form -->
+  <!-- post = data tidak akan tampil di url/address bar, 
+              biasa di gunakan untuk data kredensial(rahasia)
+        get = data akan tampil di url/address bar,
+            biasa dipake saat sorting data dalam tabel
+  -->
+  <form action="" method="post" enctype="multipart/form-data">
+    <fieldset>
+  <!-- Fieldset biodata mahasiswa -->
+      <legend>Biodata mahasiswa</legend>
+  <!-- input nama -->
+      <label for="nama">Nama</label>
+      <input type="text" name="nama" />
+      <br>
+  <!-- input tanggal lahir -->
+      <label for="tanggal-lahir">Tanggal lahir</label>
+      <input type="date" name="tanggal-lahir" />
+      <br>
+  <!-- input jenis kelamin -->
+      <label for="gender">Jenis kelamin</label>
+      <br>
+      <input type="radio" name="gender" value="laki-laki" />
+      <label for="gender">Laki-laki</label>
+      <br>
+      <input type="radio" name="gender" value="perempuan" />
+      <label for="gender">Perempuan</label>
+      <br>
+  <!-- input umur -->
+      <label for="umur">Umur</label>
+      <input type="number" name="umur" />
+      <br>
+  <!-- textarea Alamat -->
+      <label for="alamat">Alamat</label>
+      <textarea name="alamat" rows="10" cols="30" ></textarea>
+      <br>
+  <!-- input foto -->
+      <label for="foto">Foto</label>
+      <input type="file" name="foto" />
+      <br>
+    </fieldset>
+  <!-- Fieldset pendidikan -->
+    <fieldset>
+  <!-- input pendidikan terakhir -->
+      <legend>Pendidikan</legend>
+      <label for="pendidikan-terakhir">Pendidikan terakhir</label>
+      <input type="text" name="pendidikan-terakhir" />
+      <br>
+  <!-- input jurusan -->
+      <label for="jurusan">Jurusan</label>
+      <select name="jurusan">
+        <option selected>Pilih jurusan</option>
+        <option value="teknik-informatika">Teknik informatika</option>
+        <option value="sistem-informasi">Sistem informasi</option>
+        <option value="bisnis-digital">Bisnis digital</option>
+      </select>
+  <!-- input submit -->
+      <br>
+      <input type="submit" value="kirim">
+    </fieldset>
+  </form>
+</body>
+</html>
